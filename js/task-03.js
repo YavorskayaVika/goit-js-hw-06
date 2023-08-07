@@ -12,3 +12,17 @@ const images = [
     alt: 'Group of Horses Running',
   },
 ];
+  
+const gallery = document.querySelector(`.gallery`)
+// Методом map перебираємо всі об'єкти та створюємо масив рядків HTML,далі методом join з'єднуємщ всі рядки в один
+// Таким чином, ми отримуємо рядок з HTML-кодом, який містить теги <img> з відповідними атрибутами src і alt.
+
+const markup = images.map(({url, alt })=> `<img src="${url}" alt = "${alt}" class="picture">`).join(``);
+
+// отримуємо посилання на елемент .gallery на сторінці і використовуємо метод insertAdjacentHTML
+//  для вставки створеного рядка HTML в кінець елемента галереї.
+gallery.insertAdjacentHTML("beforeend", markup)
+
+
+
+
