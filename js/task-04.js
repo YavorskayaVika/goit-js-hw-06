@@ -16,7 +16,7 @@ const counter = {
 };
 
 buttonMinus.addEventListener("click",counter.descrementCount.bind(counter))
-buttonPlus.addEventListener("click",counter.descrementCount.bind(counter))
+buttonPlus.addEventListener("click",counter.incrementCount.Count.bind(counter))
 
 
 // Створи змінну counterValue, в якій буде зберігатися поточне значення лічильника та ініціалізуй її значенням 0.
