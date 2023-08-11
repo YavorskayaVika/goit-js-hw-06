@@ -18,12 +18,9 @@ for (let i = 0; i < ingredients.length; i++) {
   ingredientsNewArr.push(itemEl);
 
 
-  
-ul.append(...ingredientsNewArr);
-
 }
 
-
+ul.append(...ingredientsNewArr);
 
 
 
